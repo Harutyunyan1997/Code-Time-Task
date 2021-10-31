@@ -1,0 +1,4 @@
+.bg-bolen {
+  width: 1920px; height: 512px;
+  background: url('../images/css_sprites.png') -1950px -4540px;
+}
