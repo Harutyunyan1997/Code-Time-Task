@@ -60,10 +60,14 @@ $(document).on('ready', function () {
   let currentPackageCount = localStorage.getItem('packageCount') || 60;
   $('span.left_count').text(currentPackageCount);
 
-  setInterval(() => {
+  const interval = setInterval(() => {
     currentPackageCount = currentPackageCount - 1;
-    $('span.left_count').text(currentPackageCount);
-    localStorage.setItem('packageCount', currentPackageCount);
+    if (currentPackageCount >= 7) {
+      $('span.left_count').text(currentPackageCount);
+      localStorage.setItem('packageCount', currentPackageCount);
+    } else {
+      clearInterval(interval);
+    }
   }, 15000);
 
   // Counter - end
