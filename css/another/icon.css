@@ -1,0 +1,24 @@
+.bg-bolen {
+  width: 1920px; height: 512px;
+  background: url('../../img/sprites/png/css_sprites.png') -1950px -4540px;
+}
+
+.bg-age {
+  width: 20px; height: 20px;
+  background: url('css_sprites.png') -417px -104px;
+}
+
+.bg-gost {
+  width: 237px; height: 72px;
+  background: url('css_sprites.png') -10px -196px;
+}
+
+.bg-logo {
+  width: 277px; height: 72px;
+  background: url('css_sprites.png') -10px -104px;
+}
+
+.bg-logo2 {
+  width: 463px; height: 74px;
+  background: url('css_sprites.png') -10px -10px;
+}
